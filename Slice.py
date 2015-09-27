@@ -10,3 +10,7 @@ while n<3:
 	L_cache2.append(L[n])
 	n = n + 1
 print(L_cache2)
+
+# Method3(Simple method):
+L_cache3 = L[0:3]
+print(L_cache3)
