@@ -35,7 +35,7 @@ def fib2(max):
 		yield b
 		a,b = b,a + b
 		n = n + 1
-	
+	return 'done'
 print(fib2(10))
 print("Print fib2:")
 for x in fib2(10):
