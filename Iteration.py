@@ -1,0 +1,1 @@
+d = {'a':1,'b':2,'c':3}for key in d:	print(key)# enumerate applyingfor i,value in enumerate(['A','B','C']):	print(i,value)# quote two elementsfor x,y in [(1,1),(2,2),(3,3)]:	print(x,y)
