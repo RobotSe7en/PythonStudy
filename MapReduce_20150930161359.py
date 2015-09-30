@@ -50,13 +50,10 @@ print(str2float('.111111'))
 
 # 练习3的另一种解决办法，方法不错
 def str2float(s):
-	if '.' in s:
-		pop = s.find('.')
-		print(pop)
-		floatLen = 10**(len(s) - pop - 1)
-		s = s[:pop] + s[pop+1:]
-	else:
-		floatLen = 1
+	pop = s.find('.')
+	floatLen = 10**(len(s) - pop - 1)
+	s = s[:pop] + s[pop+1:]
+	print (s)
 	def num2int(x,y):
 		return x*10 + y
 	def char2num(s):
@@ -65,7 +62,7 @@ def str2float(s):
 		d = dict(zip(map(str,lKey),lvalue))
 		return d[s]
 	return reduce(num2int,map(char2num,s))/floatLen
-print(str2float('2222.222'))
+print(str2float('2222'))
 		
 
 
