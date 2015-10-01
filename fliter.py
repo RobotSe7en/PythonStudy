@@ -31,3 +31,7 @@ for n in prime():
 	else:
 		break
 
+# Exercise1:使用filter过滤掉非回数
+def isPalindrome(n):
+	return str(n) == str(n)[::-1]
+print(list(filter(isPalindrome,range(1,1000))))
