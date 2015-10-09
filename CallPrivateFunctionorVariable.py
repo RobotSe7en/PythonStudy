@@ -1,0 +1,2 @@
+import PrivateFunctionorVariable
+PrivateFunctionorVariable.greeting('WangPeng')
