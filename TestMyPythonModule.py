@@ -1,0 +1,3 @@
+import MyFirstPythonPackage
+import MyFirstPythonPackage.FirstModule
+import MyFirstPythonPackage.SecondaryModule
