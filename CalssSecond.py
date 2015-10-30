@@ -15,3 +15,15 @@ L2 = sorted(L1,key=lambda L1:L1.name)
 print(L2[0].name)
 print(L2[1].name)
 print(L2[2].name)
+
+class Person1(object):
+	"""docstring for Person1"""
+	def __init__(self, name, gender, birth, **kw):
+		self.name = name
+		self.gender = gender
+		self.birth = birth
+		for key in kw.keys():
+			setattr(self,key,kw[key])
+
+xiaowang = Person1('xiaowang','male','33',job='teacher')
+print(xiaowang.name,xiaowang.job)
